@@ -21,11 +21,14 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
-                        body: 'rgb(248, 246, 243)',
-                        accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
+                        primary: 'rgb(171, 239, 95)',
+                        footer: 'rgb(17, 17, 17)',
+                        cardOne: 'rgb(231, 193, 211)',
+                        cardTwo:'rgb(239, 218, 110)',
+                        cardThere:'rgb(164, 218, 195)',
+                        cardFour:'rgb(119, 170, 234)',
+                        secondary: 'rgb(171, 239, 95, 0.5)',
+                        body:'rgb(255, 255, 255)'
                     },
                     fontFamily: {
                         manrope: 'Manrope',
@@ -37,6 +40,78 @@
     </script>
 </head>
 <body class="font-manrope">
-    <h2>Mominul</h2>
+    <!-- <i class="fa-solid fa-arrow-right -rotate-45 bg-primary p-1 rounded-full"></i> -->
+  <header>
+    <nav class="w-11/12 mx-auto py-4">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+             <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-primary shadow rounded-full p-1"></i>
+                <h1 class="font-bold text-3xl">Rinterio</h1>
+                
+             </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal gap-4 font-semibold text-gray-400">
+               <li class="font-bold text-black hover:text-primary transition-colors duration-300 ease-in-out">Home</li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out">Services</li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out">Portfolio</li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out">Blogs</li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out">Contact Us</li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <div class="sm:flex sm:justify-center sm:items-center sm:gap-4 hidden">
+                <i class=" bg-white p-3 text-gray-400 shadow  rounded-full fa-solid fa-magnifying-glass"></i>
+                <i class=" bg-white p-3 text-gray-400 shadow  rounded-full fa-solid fa-cart-shopping"></i>
+               <button class="bg-primary shadow rounded-full sm:py-3 lg::px-5 md:px-3 text-white font-bold flex items-center gap-1"> 
+                <span class="text-black sm:text-lg ">Book Consult</span>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black shadow rounded-full p-1 "></i>
+               </button>
+              </div>
+
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-4 font-semibold text-gray-400 right-0">
+                  <li class="font-bold text-black hover:text-primary transition-colors duration-300 ease-in-out">Home</li>
+                  <li class="hover:text-primary transition-colors duration-300 ease-in-out">Services</li>
+                  <li class="hover:text-primary transition-colors duration-300 ease-in-out">Portfolio</li>
+                  <li class="hover:text-primary transition-colors duration-300 ease-in-out">Blogs</li>
+                  <li class="hover:text-primary transition-colors duration-300 ease-in-out">Contact Us</li>
+
+                  <div class="flex justify-center items-center gap-1 md:hidden ">
+                    <i class=" bg-white p-3 text-gray-400 shadow  rounded-full fa-solid fa-magnifying-glass"></i>
+                    <i class=" bg-white p-3 text-gray-400 shadow  rounded-full fa-solid fa-cart-shopping"></i>
+                   <button class="bg-primary shadow rounded-full px-1 py-2  text-white font-bold flex items-center gap-1"> 
+                    <span class="text-black  ">BookConsult</span>
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-black shadow rounded-full p-1 "></i>
+                   </button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <div class="flex flex-col justify-center items-center my-10 w-11/12 mx-auto">
+        <div>
+            <img src="./assets/banner.png" alt="" srcset="">
+        </div>
+
+        <div class="mt-10 flex flex-col items-center space-y-12 justify-center text-center ">
+            <h2 class="lg:text-7xl md:text-4xl text-xl font-bold leading-tight">A barn house of this design has a striking appearance</h2>
+            <p class="lg:w-4/6 font-semibold leading-loose">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="bg-primary shadow rounded-full px-4 py-4  text-white font-bold flex items-center gap-1 hover:bg-secondary"> 
+                <span class="text-black  ">View Details</span>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black shadow rounded-full p-1 "></i>
+               </button>
+        </div>
+    </div>
+  </header>
 </body>
 </html>
